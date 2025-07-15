@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Health Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head> 
+ <button id ="profile">
+ <a href="profile.html" id="profileBtn">Profile</a>
+</button>
+<button id="logoutBtn">Logout</button>
+<body id="page3">
+  <div class="center-wrapper">
+  <header>
+    <h2 id="greeting"></h2>
+    <div class="input-section">
+      <h3>Gender</h3>
+      <select id="gender">
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+      </select>
+    </div>
+
+    <div class="input-section">
+      <h3>Calculate BMI</h3>
+      <input type="number" id="height" placeholder="Height (cm)" />
+      <input type="number" id="weight" placeholder="Weight (kg)" />
+      <button id="bmiBtn">
+        <img src="BMI.png" alt="BMI" height="30" />
+      </button>
+      <span id="bmiResult" class="result"></span>
+    </div>
+
+    <div class="input-section">
+      <h3>Track Water Intake</h3>
+      <input type="number" id="water" placeholder="Input in Liters" />
+      <button id="waterBtn">
+        <img src="water.png" alt="Water" height="30" />
+      </button>
+      <span id="waterResult" class="result"></span>
+    </div>
+
+    <div class="input-section">
+      <h3>Sleep Hours</h3>
+      <input type="number" id="sleep" placeholder="Sleep hours" />
+      <button id="sleepBtn">
+        <img src="sleep.png" alt="Sleep" height="30" />
+      </button>
+      <span id="sleepResult" class="result"></spam>
+    </div>
+
+    <div class="input-section" id="periodSection">
+      <h3>Period Cycle</h3>
+      <input type="date" id="period" />
+      <button id="periodBtn">
+        <img src="period.png" alt="Period" height="30" />
+      </button>
+      <span id="periodResult" class="result"></span>
+    </div>
+
+    <div class="input-section">
+      <h3>Did you exercise today?</h3>
+      <input type="text" id="exercise" placeholder="Yes or No" />
+      <button id="exerciseBtn">Submit</button>
+      <span id="exerciseComment" class="result"></span>
+    </div>
+  </header>
+
+  <section class="progress-container">
+
+    <div class="metric">
+      <label>💧 Water Intake</label>
+      <div class="bar">
+        <div class="fill skyblue" id="waterBar"> </div>
+        <span class="measure" id="waterMeasure"></span>
+      </div>
+      <p class="bar-label">Water Intake (Goal: 2L/day, Max: 5L)</p>
+    </div>
+
+    <div class="metric">
+      <label>🛌 Sleep</label>
+      <div class="bar">
+        <div class="fill violet" id="sleepBar"></div>
+        <span class="measure" id="sleepMeasure"></span>
+      </div>
+      <p class="bar-label">Sleep Hours (Ideal: 6h/day, Max: 12h)</p>
+    </div>
+
+    <div class="metric">
+      <label>⚖️ BMI</label>
+      <div class="bar">
+        <div class="fill yellow" id="bmiBar"></div>
+        <span class="measure" id="bmiMeasure"></span>
+      </div>
+      <p class="bar-label">BMI (Ideal: 18.5–24.9, Max: 40)</p>
+    </div>
+
+  </section>
+
+  <section>
+    <h3>📝 Your Routine Suggestion</h3>
+    <textarea id="routineSuggestion" rows="6" readonly></textarea>
+  </section>
+  </div>
+<div>
+  
+  <footer>
+   <img  id ="add.icon" src = "mail.png" alt ="emial"  height="20" width=" 20">
+    <p><b>Contact us at: health@gmail.com</b></p></div>
+  </footer>
+</div>
+  <script src="script.js"></script>
+
+
+</body>
+</html>

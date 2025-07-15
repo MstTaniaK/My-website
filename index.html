@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color:#004030;
+      text-align: center;
+      font-weight: bolder;
+      
+      
+
+      
+      
+    }
+    .form-container {
+      
+      max-width: 400px;
+      margin: auto;
+      background: white;
+      padding: 50px;
+      border-radius: 50px;
+      margin-top:150px;
+
+    }
+    input {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 8px;
+      border-style: black;
+      text-align: left;
+    }
+
+    button{
+        display:block;
+        width:50%;
+        margin:10px,0;
+        padding:10px;
+        border-radius: 8px;
+        border-style: black;
+        text-align: center;
+
+
+    }
+    h2{
+        font-size: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Login</h2>
+    <input type="text" id="loginEmail" placeholder="Email or Phone" required />
+    <input type="password" id="loginPassword" placeholder="Password" required />
+    <button onclick="handleLogin() ">Login</button>
+    <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+  </div>
+ 
+  <script src="auth.js"></script>
+</body>
+</html>
